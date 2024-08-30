@@ -58,7 +58,7 @@ public class TodoItemsController : ControllerBase
         }
 
         todoItem.Name = todoDTO.Name;
-        todoItem.IsComplete = todoDTO.IsComplete;
+        todoItem.IsComplet = todoDTO.IsComplete;
 
         try
         {
@@ -81,7 +81,7 @@ public class TodoItemsController : ControllerBase
     {
         var todoItem = new TodoItem
         {
-            IsComplete = todoDTO.IsComplete,
+            IsComplet = todoDTO.IsComplete,
             Name = todoDTO.Name
         };
 
@@ -121,6 +121,6 @@ public class TodoItemsController : ControllerBase
        {
            Id = todoItem.Id,
            Name = todoItem.Name,
-           IsComplete = todoItem.IsComplete
+           IsComplete = todoItem.IsComplet
        };
 }
